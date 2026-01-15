@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-01-15T13:55:52.811637",
+  "s3_location": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/",
+  "total_weeks": 8,
+  "total_lessons": 22,
+  "total_slides": 137,
+  "knowledge_base_file": "/home/ubuntu/nir_knowledge_base.json",
+  "weeks_summary": {
+    "Week_01": {
+      "lessons": 2,
+      "slides": 12
+    },
+    "Week_02": {
+      "lessons": 1,
+      "slides": 6
+    },
+    "Week_03": {
+      "lessons": 11,
+      "slides": 72
+    },
+    "Week_04": {
+      "lessons": 2,
+      "slides": 12
+    },
+    "Week_05": {
+      "lessons": 1,
+      "slides": 6
+    },
+    "Week_06": {
+      "lessons": 0,
+      "slides": 0
+    },
+    "Week_07": {
+      "lessons": 1,
+      "slides": 6
+    },
+    "Week_08": {
+      "lessons": 4,
+      "slides": 23
+    }
+  }
+}

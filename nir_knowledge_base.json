@@ -1,0 +1,359 @@
+[
+  {
+    "week": "Week_01",
+    "week_num": 1,
+    "lesson_id": "L01_Introduction_to_NIR",
+    "lesson_name": "Lesson esson 1 Introduction to NIR",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_01/L01_Introduction_to_NIR/",
+    "slides": [
+      "03_what_is_nir.png",
+      "04_how_nir_works.png",
+      "05_why_nir_matters.png",
+      "06_nir_in_action.png",
+      "07_nir_advantage.png",
+      "08_journey_starts_here.png"
+    ]
+  },
+  {
+    "week": "Week_01",
+    "week_num": 1,
+    "lesson_id": "L01_Welcome",
+    "lesson_name": "Lesson esson 1 Welcome",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_01/L01_Welcome/",
+    "slides": [
+      "03_what_is_nir.png",
+      "04_how_nir_works.png",
+      "05_why_nir_matters.png",
+      "06_nir_in_action.png",
+      "07_nir_advantage.png",
+      "08_journey_starts_here.png"
+    ]
+  },
+  {
+    "week": "Week_02",
+    "week_num": 2,
+    "lesson_id": "L05_NIR_Spectral_Features",
+    "lesson_name": "Lesson esson 5 NIR Spectral Features",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_02/L05_NIR_Spectral_Features/",
+    "slides": [
+      "03_ch_bonds.png",
+      "04_oh_bonds.png",
+      "05_nh_bonds.png",
+      "06_spectral_overlap.png",
+      "07_temperature_physical_state.png",
+      "08_reading_nir_spectrum.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L10_Calibration_Development",
+    "lesson_name": "Lesson 10 Calibration Development",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L10_Calibration_Development/",
+    "slides": [
+      "03_building_calibration.png",
+      "04_sample_selection.png",
+      "05_reference_methods.png",
+      "06_data_splitting.png",
+      "07_model_optimization.png",
+      "08_calibration_documentation.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L11",
+    "lesson_name": "Lesson 11",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L11/",
+    "slides": [
+      "03_basic_components.png",
+      "04_light_sources.png",
+      "05_detectors.png",
+      "06_monochromators.png",
+      "07_measurement_modes.png",
+      "08_instrument_types_overview.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L11_NIR_Instrumentation_Basics",
+    "lesson_name": "Lesson 11 NIR Instrumentation Basics",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L11_NIR_Instrumentation_Basics/",
+    "slides": [
+      "03_basic_components.png",
+      "04_light_sources.png",
+      "05_detectors.png",
+      "06_monochromators.png",
+      "07_measurement_modes.png",
+      "08_instrument_types_overview.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L12",
+    "lesson_name": "Lesson 12",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L12/",
+    "slides": [
+      "03_benchtop_instruments.png",
+      "04_handheld_instruments.png",
+      "05_online_instruments.png",
+      "06_atline_instruments.png",
+      "07_choosing_instrument_type.png",
+      "08_instrument_comparison.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L12_Instrument_Types",
+    "lesson_name": "Lesson 12 Instrument Types",
+    "slide_count": 12,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L12_Instrument_Types/",
+    "slides": [
+      "03_benchtop_instruments.png",
+      "03_calibration_transfer_overview.png",
+      "04_handheld_instruments.png",
+      "04_transfer_methods.png",
+      "05_online_instruments.png",
+      "05_transfer_samples.png",
+      "06_atline_instruments.png",
+      "06_transfer_validation.png",
+      "07_choosing_instrument_type.png",
+      "07_troubleshooting_transfer.png",
+      "08_instrument_comparison.png",
+      "08_transfer_documentation.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L13",
+    "lesson_name": "Lesson 13",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L13/",
+    "slides": [
+      "03_grain_quality.png",
+      "04_forage_feed.png",
+      "05_soil_analysis.png",
+      "06_fruit_vegetable.png",
+      "07_seed_testing.png",
+      "08_precision_agriculture.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L13_*",
+    "lesson_name": "Lesson 13 *",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L13_*/",
+    "slides": [
+      "03_maintenance_overview.png",
+      "04_performance_monitoring.png",
+      "05_model_updating.png",
+      "06_drift_detection.png",
+      "07_change_control.png",
+      "08_maintenance_documentation.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L14",
+    "lesson_name": "Lesson 14",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L14/",
+    "slides": [
+      "03_moisture_fat.png",
+      "04_protein_determination.png",
+      "05_carbohydrate_analysis.png",
+      "06_adulteration_detection.png",
+      "07_process_monitoring.png",
+      "08_finished_product_qc.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L14_*",
+    "lesson_name": "Lesson 14 *",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L14_*/",
+    "slides": [
+      "03_common_problems.png",
+      "04_systematic_troubleshooting.png",
+      "05_spectral_troubleshooting.png",
+      "06_prediction_troubleshooting.png",
+      "07_instrument_troubleshooting.png",
+      "08_documentation_troubleshooting.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L15",
+    "lesson_name": "Lesson 15",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L15/",
+    "slides": [
+      "03_raw_material_id.png",
+      "04_blend_uniformity.png",
+      "05_tablet_coating.png",
+      "06_counterfeit_detection.png",
+      "07_pat_implementation.png",
+      "08_regulatory_compliance.png"
+    ]
+  },
+  {
+    "week": "Week_03",
+    "week_num": 3,
+    "lesson_id": "L15_*",
+    "lesson_name": "Lesson 15 *",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_03/L15_*/",
+    "slides": [
+      "03_regulatory_landscape.png",
+      "04_method_validation_requirements.png",
+      "05_pat_framework.png",
+      "06_data_integrity.png",
+      "07_audit_preparation.png",
+      "08_regulatory_documentation.png"
+    ]
+  },
+  {
+    "week": "Week_04",
+    "week_num": 4,
+    "lesson_id": "L13_Agriculture_Applications",
+    "lesson_name": "Lesson 13 Agriculture Applications",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_04/L13_Agriculture_Applications/",
+    "slides": [
+      "03_grain_quality.png",
+      "04_forage_feed.png",
+      "05_soil_analysis.png",
+      "06_fruit_vegetable.png",
+      "07_seed_testing.png",
+      "08_precision_agriculture.png"
+    ]
+  },
+  {
+    "week": "Week_04",
+    "week_num": 4,
+    "lesson_id": "L14_Food_Applications",
+    "lesson_name": "Lesson 14 Food Applications",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_04/L14_Food_Applications/",
+    "slides": [
+      "03_moisture_fat.png",
+      "04_protein_determination.png",
+      "05_carbohydrate_analysis.png",
+      "06_adulteration_detection.png",
+      "07_process_monitoring.png",
+      "08_finished_product_qc.png"
+    ]
+  },
+  {
+    "week": "Week_05",
+    "week_num": 5,
+    "lesson_id": "L15_Pharmaceutical_Applications",
+    "lesson_name": "Lesson 15 Pharmaceutical Applications",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_05/L15_Pharmaceutical_Applications/",
+    "slides": [
+      "03_raw_material_id.png",
+      "04_blend_uniformity.png",
+      "05_tablet_coating.png",
+      "06_counterfeit_detection.png",
+      "07_pat_implementation.png",
+      "08_regulatory_compliance.png"
+    ]
+  },
+  {
+    "week": "Week_07",
+    "week_num": 7,
+    "lesson_id": "L21_Introduction_to_Calibration",
+    "lesson_name": "Lesson 21 Introduction to Calibration",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_07/L21_Introduction_to_Calibration/",
+    "slides": [
+      "03_what_is_calibration.png",
+      "04_calibration_vs_validation.png",
+      "05_sample_requirements.png",
+      "06_reference_methods.png",
+      "07_chemometrics_intro.png",
+      "08_calibration_workflow_overview.png"
+    ]
+  },
+  {
+    "week": "Week_08",
+    "week_num": 8,
+    "lesson_id": "L28_The_Business_Case_for_NIR",
+    "lesson_name": "Lesson 28 The Business Case for NIR",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_08/L28_The_Business_Case_for_NIR/",
+    "slides": [
+      "03_roi_fundamentals.png",
+      "04_cost_savings.png",
+      "05_quality_improvements.png",
+      "06_productivity_gains.png",
+      "07_competitive_advantages.png",
+      "08_building_business_case.png"
+    ]
+  },
+  {
+    "week": "Week_08",
+    "week_num": 8,
+    "lesson_id": "L29_Career_Paths_in_NIR",
+    "lesson_name": "Lesson 29 Career Paths in NIR",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_08/L29_Career_Paths_in_NIR/",
+    "slides": [
+      "03_nir_career_landscape.png",
+      "04_analytical_chemist.png",
+      "05_applications_scientist.png",
+      "06_qc_manager.png",
+      "07_research_scientist.png",
+      "08_career_development.png"
+    ]
+  },
+  {
+    "week": "Week_08",
+    "week_num": 8,
+    "lesson_id": "L30_Selling_NIR_to_Management",
+    "lesson_name": "Lesson 30 Selling NIR to Management",
+    "slide_count": 6,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_08/L30_Selling_NIR_to_Management/",
+    "slides": [
+      "03_understanding_management_perspective.png",
+      "04_crafting_compelling_proposal.png",
+      "05_addressing_objections.png",
+      "06_pilot_program_strategy.png",
+      "07_presentation_delivery.png",
+      "08_securing_approval.png"
+    ]
+  },
+  {
+    "week": "Week_08",
+    "week_num": 8,
+    "lesson_id": "L32_Course_Conclusion",
+    "lesson_name": "Lesson 32 Course Conclusion",
+    "slide_count": 5,
+    "s3_path": "s3://clovitek/users/vitaly@clovitek.com/courses/NIR_Essentials_Course/Week_08/L32_Course_Conclusion/",
+    "slides": [
+      "03_journey_recap.png",
+      "04_applying_knowledge.png",
+      "05_continuing_education.png",
+      "06_nir_community.png",
+      "07_your_nir_future.png"
+    ]
+  }
+]
