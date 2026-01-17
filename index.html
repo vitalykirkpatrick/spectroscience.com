@@ -129,7 +129,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            pointer-events: none;
+            pointer-events: auto;
             z-index: 0;
             opacity: 0.3;
         }
@@ -155,6 +155,66 @@
             width: 100%;
             height: 100%;
             animation: spectrumFly 15s ease-in-out infinite;
+        }
+        
+        .peak-label:hover circle {
+            fill: rgba(0, 217, 255, 0.4);
+            stroke-width: 3;
+        }
+        
+        .peak-label:hover text {
+            font-size: 16px;
+        }
+        
+        /* Peak info tooltip */
+        .peak-tooltip {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.98) 100%);
+            border: 2px solid rgba(0, 217, 255, 0.5);
+            border-radius: 16px;
+            padding: 24px;
+            max-width: 500px;
+            z-index: 10000;
+            box-shadow: 
+                0 0 40px rgba(0, 217, 255, 0.4),
+                0 0 80px rgba(0, 217, 255, 0.2),
+                inset 0 0 30px rgba(0, 217, 255, 0.1);
+            display: none;
+            animation: tooltipFadeIn 0.3s ease;
+        }
+        
+        .peak-tooltip.active {
+            display: block;
+        }
+        
+        @keyframes tooltipFadeIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+        
+        .peak-tooltip-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 9999;
+            display: none;
+        }
+        
+        .peak-tooltip-overlay.active {
+            display: block;
         }
         
         .content-wrapper {
@@ -445,11 +505,23 @@
                   stroke="url(#spectrumGradient)" 
                   stroke-width="4" 
                   filter="drop-shadow(0 0 8px rgba(0, 217, 255, 0.8))"/>
-            <!-- Peak labels -->
-            <text x="150" y="230" fill="#00d9ff" font-size="14" opacity="0.8">O-H</text>
-            <text x="380" y="160" fill="#00d9ff" font-size="14" opacity="0.8">C-H</text>
-            <text x="620" y="280" fill="#00d9ff" font-size="14" opacity="0.8">N-H</text>
-            <text x="810" y="200" fill="#00d9ff" font-size="14" opacity="0.8">C=O</text>
+            <!-- Interactive peak labels -->
+            <g class="peak-label" onclick="showPeakInfo('O-H', 'Hydroxyl Group', 'Found in water, alcohols, and organic acids. Strong NIR absorption around 1450nm and 1940nm.')" style="cursor: pointer;">
+                <circle cx="150" cy="250" r="20" fill="rgba(0, 217, 255, 0.2)" stroke="#00d9ff" stroke-width="2"/>
+                <text x="150" y="230" fill="#00d9ff" font-size="14" font-weight="bold" text-anchor="middle">O-H</text>
+            </g>
+            <g class="peak-label" onclick="showPeakInfo('C-H', 'Carbon-Hydrogen Bond', 'Present in all organic compounds. NIR absorption bands at 1200nm, 1700nm, and 2300nm from overtones and combinations.')" style="cursor: pointer;">
+                <circle cx="380" cy="180" r="20" fill="rgba(0, 217, 255, 0.2)" stroke="#00d9ff" stroke-width="2"/>
+                <text x="380" y="160" fill="#00d9ff" font-size="14" font-weight="bold" text-anchor="middle">C-H</text>
+            </g>
+            <g class="peak-label" onclick="showPeakInfo('N-H', 'Nitrogen-Hydrogen Bond', 'Found in proteins, amines, and amides. NIR absorption around 1500nm and 2000nm. Important for protein analysis.')" style="cursor: pointer;">
+                <circle cx="620" cy="300" r="20" fill="rgba(0, 217, 255, 0.2)" stroke="#00d9ff" stroke-width="2"/>
+                <text x="620" y="280" fill="#00d9ff" font-size="14" font-weight="bold" text-anchor="middle">N-H</text>
+            </g>
+            <g class="peak-label" onclick="showPeakInfo('C=O', 'Carbonyl Group', 'Found in aldehydes, ketones, esters, and carboxylic acids. NIR absorption around 2100nm. Key for fat and oil analysis.')" style="cursor: pointer;">
+                <circle cx="810" cy="220" r="20" fill="rgba(0, 217, 255, 0.2)" stroke="#00d9ff" stroke-width="2"/>
+                <text x="810" y="200" fill="#00d9ff" font-size="14" font-weight="bold" text-anchor="middle">C=O</text>
+            </g>
         </svg>
     </div>
     
@@ -1015,6 +1087,17 @@
         <button class="absolute top-4 right-4 text-white text-4xl hover:text-cyan-400 transition" onclick="closeLightbox()">&times;</button>
         <img id="lightbox-img" class="lightbox-content" src="" alt="Full size image">
     </div>
+    
+    <!-- Peak Info Tooltip -->
+    <div id="peak-tooltip-overlay" class="peak-tooltip-overlay" onclick="closePeakInfo()"></div>
+    <div id="peak-tooltip" class="peak-tooltip">
+        <div class="flex justify-between items-start mb-4">
+            <h3 id="peak-title" class="text-2xl font-bold gradient-text"></h3>
+            <button onclick="closePeakInfo()" class="text-cyan-400 hover:text-cyan-300 text-3xl leading-none">&times;</button>
+        </div>
+        <h4 id="peak-subtitle" class="text-lg text-cyan-300 mb-3"></h4>
+        <p id="peak-description" class="text-gray-300 leading-relaxed"></p>
+    </div>
 
     <script>
         // Toggle week sections
@@ -1048,6 +1131,22 @@
                 }
             });
         });
+        
+        // Peak info tooltip
+        function showPeakInfo(bond, name, description) {
+            document.getElementById('peak-title').textContent = bond;
+            document.getElementById('peak-subtitle').textContent = name;
+            document.getElementById('peak-description').textContent = description;
+            document.getElementById('peak-tooltip').classList.add('active');
+            document.getElementById('peak-tooltip-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePeakInfo() {
+            document.getElementById('peak-tooltip').classList.remove('active');
+            document.getElementById('peak-tooltip-overlay').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
     </script>
 </body>
 </html>
