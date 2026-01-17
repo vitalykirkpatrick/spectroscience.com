@@ -239,12 +239,24 @@
                 inset 0 0 20px rgba(74, 158, 255, 0.1);
         }
         
-        /* Week cards with vertical spectrum gradient */
+        /* Week cards with vertical spectrum gradient and left glow bar */
         .week-card {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%);
-            border-left: 4px solid;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
+            border-left: 6px solid;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
+        }
+        
+        /* Glowing left border effect */
+        .week-card::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            filter: blur(8px);
+            opacity: 0.8;
         }
         
         /* Vertical spectrum colors for each week */
@@ -252,40 +264,64 @@
             border-left-color: #8b5cf6; /* Violet */
             background: linear-gradient(to bottom, rgba(139, 92, 246, 0.15), rgba(15, 23, 42, 0.8));
         }
+        .week-card:nth-child(1)::before {
+            background: linear-gradient(to bottom, #8b5cf6, #a78bfa);
+        }
         
         .week-card:nth-child(2) {
             border-left-color: #3b82f6; /* Blue */
             background: linear-gradient(to bottom, rgba(59, 130, 246, 0.15), rgba(15, 23, 42, 0.8));
+        }
+        .week-card:nth-child(2)::before {
+            background: linear-gradient(to bottom, #3b82f6, #60a5fa);
         }
         
         .week-card:nth-child(3) {
             border-left-color: #06b6d4; /* Cyan */
             background: linear-gradient(to bottom, rgba(6, 182, 212, 0.15), rgba(15, 23, 42, 0.8));
         }
+        .week-card:nth-child(3)::before {
+            background: linear-gradient(to bottom, #06b6d4, #22d3ee);
+        }
         
         .week-card:nth-child(4) {
             border-left-color: #10b981; /* Green */
             background: linear-gradient(to bottom, rgba(16, 185, 129, 0.15), rgba(15, 23, 42, 0.8));
+        }
+        .week-card:nth-child(4)::before {
+            background: linear-gradient(to bottom, #10b981, #34d399);
         }
         
         .week-card:nth-child(5) {
             border-left-color: #eab308; /* Yellow */
             background: linear-gradient(to bottom, rgba(234, 179, 8, 0.15), rgba(15, 23, 42, 0.8));
         }
+        .week-card:nth-child(5)::before {
+            background: linear-gradient(to bottom, #eab308, #fbbf24);
+        }
         
         .week-card:nth-child(6) {
             border-left-color: #f97316; /* Orange */
             background: linear-gradient(to bottom, rgba(249, 115, 22, 0.15), rgba(15, 23, 42, 0.8));
+        }
+        .week-card:nth-child(6)::before {
+            background: linear-gradient(to bottom, #f97316, #fb923c);
         }
         
         .week-card:nth-child(7) {
             border-left-color: #ef4444; /* Red */
             background: linear-gradient(to bottom, rgba(239, 68, 68, 0.15), rgba(15, 23, 42, 0.8));
         }
+        .week-card:nth-child(7)::before {
+            background: linear-gradient(to bottom, #ef4444, #f87171);
+        }
         
         .week-card:nth-child(8) {
             border-left-color: #ec4899; /* Pink/Magenta */
             background: linear-gradient(to bottom, rgba(236, 72, 153, 0.15), rgba(15, 23, 42, 0.8));
+        }
+        .week-card:nth-child(8)::before {
+            background: linear-gradient(to bottom, #ec4899, #f472b6);
         }
         
 
