@@ -239,33 +239,12 @@
                 inset 0 0 20px rgba(74, 158, 255, 0.1);
         }
         
-        /* Week cards with vertical spectrum gradient and left glow bar */
+        /* Week cards - clean design without glow */
         .week-card {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 100%);
-            border-left: 6px solid;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 100%);
+            border: 1px solid rgba(74, 158, 255, 0.2);
             position: relative;
-            overflow: visible;
-        }
-        
-        /* Glowing left border effect */
-        .week-card::before {
-            content: '';
-            position: absolute;
-            left: -6px;
-            top: 0;
-            bottom: 0;
-            width: 6px;
-            filter: blur(8px);
-            opacity: 0.8;
-        }
-        
-        /* Uniform cyan color for all week cards */
-        .week-card {
-            border-left-color: #06b6d4; /* Cyan */
-        }
-        
-        .week-card::before {
-            background: linear-gradient(to bottom, #06b6d4, #22d3ee);
+            overflow: hidden;
         }
         
 
